@@ -1,572 +1,600 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-:root{
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --azul-terciario: #167BF7;
-    --cor-de-fundo: #00030C;
-    --cor-hover-primaria: #88BCFD;
-    --cor-hover-secundario: #8a8a8a;
+:root {
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0;
+  --azul-terciario: #167bf7;
+  --cor-de-fundo: #00030c;
+  --cor-hover-primaria: #88bcfd;
+  --cor-hover-secundario: #8a8a8a;
 
-    --fonte-primaria: 'Poppins', sans-serif;
+  --fonte-primaria: "Poppins", sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    height: 100vh;
-    font-family: var(--fonte-primaria);
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  color: var(--branco-principal);
+  height: 100vh;
+  font-family: var(--fonte-primaria);
+  overflow-x: hidden;
 }
 
-.apresentacao__alura__plus{
-    background-image: url(/assets/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10% 0 10% 1%;
+.apresentacao__alura__plus {
+  background-image: url(/assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 0 10% 1%;
 }
 
-.apresentacao__alura__plus__componentes{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 43%;
-    gap: 50px;
-    align-items: center;
-    padding: 0 1% 0 1%;
+.apresentacao__alura__plus__componentes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 43%;
+  gap: 50px;
+  align-items: center;
+  padding: 0 1% 0 1%;
 }
 
-.apresentacao__alura__plus__titulo{
-    font-size: 1.75rem;
-    text-align: center;
-    /* width: 80%; */
+.apresentacao__alura__plus__titulo {
+  font-size: 1.75rem;
+  text-align: center;
+  /* width: 80%; */
 }
 
-.apresentacao__alura__plus__imagem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.apresentacao__alura__plus__imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.apresentacao__alura__plus__imagem__combo{
-
+.apresentacao__alura__plus__imagem__combo {
 }
 
-.apresentacao__alura__plus__botoes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+.apresentacao__alura__plus__botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
-.apresentacao__alura__plus__botao__assinar__combo{
-    background-color: var(--azul-terciario);
-    color: var(--branco-principal);
-    text-decoration: none;
-    padding: 3%;
-    text-align: center;
-    border-radius: 8px;
+.apresentacao__alura__plus__botao__assinar__combo {
+  background-color: var(--azul-terciario);
+  color: var(--branco-principal);
+  text-decoration: none;
+  padding: 3%;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.apresentacao__alura__plus__botao__assinar__combo:hover {
+  background-color: var(--cor-hover-primaria);
+}
+
+.apresentacao__alura__plus__botao__assinar__alura__plus {
+  background-color: transparent;
+  border: 2px solid var(--branco-principal);
+  color: var(--branco-principal);
+  text-decoration: none;
+  padding: 3%;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.apresentacao__alura__plus__botao__assinar__alura__plus:hover {
+  background-color: var(--cor-hover-secundario);
+}
+
+.apresentacao__alura__plus__observacao {
+  color: var(--cinza-secundario);
+  font-size: 0.75rem;
+}
+
+.plataformas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 8% 12%;
+}
+
+.animation__left__fade__in {
+  animation: ease-out 1s left-fade-in;
+}
+
+@keyframes left-fade-in {
+  from {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.animation__right__fade__in {
+  animation: ease-out 1s right-fade-in;
+}
+
+@keyframes right-fade-in {
+  from {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.animation__fade__in {
+  animation: ease-out 1s fade-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.plataformas__imagem {
+}
+
+.plataformas__textos {
+  display: flex;
+  flex-direction: column;
+}
+
+.plataformas__titulo {
+  font-size: 3rem;
+}
+
+.plataformas__paragrafo {
+  font-size: 1rem;
+  color: var(--cinza-secundario);
+}
+
+.telas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 8% 12%;
+}
+
+.telas__texto__botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.telas__paragrafo {
+  color: var(--cinza-secundario);
+  font-size: 1rem;
+}
+
+.telas__botao {
+  background-color: var(--azul-terciario);
+  color: var(--branco-principal);
+  text-decoration: none;
+  padding: 3%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.telas__imagem {
+}
+
+.notebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 8% 12%;
+}
+
+.notebook__imagem {
+}
+
+.notebook__textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 16px; */
+}
+
+.notebook__titulo {
+  font-size: 3rem;
+}
+
+.notebook__paragrafo {
+  color: var(--cinza-secundario);
+  font-size: 1rem;
+}
+
+.dispositivos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 8% 12%;
+}
+
+.dispositivos__titulo {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.dispositivos__opcoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.dispositivos__tv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dispositivos__imagem__tv {
+}
+
+.dispositivos__titulo__tv {
+}
+
+.dispositivos__computador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dispositivos__imagem__computador {
+}
+
+.dispositivos__titulo__computador {
+}
+
+.dispositivos__celular__tablet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dispositivos__imagem__celular__tablet {
+}
+
+.dispositivos__titulo__celular_tablet {
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 8% 12%;
+}
+
+.footer__infos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer__textos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__texto {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--branco-principal);
+  text-align: center;
+}
+
+.footer__texto__alternativo {
+  font-size: 0.875rem;
+  color: var(--cinza-secundario);
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .apresentacao__alura__plus {
+    background-image: none;
+  }
+
+  .apresentacao__alura__plus__componentes {
     width: 100%;
-}
+  }
 
-.apresentacao__alura__plus__botao__assinar__combo:hover{
-    background-color: var(--cor-hover-primaria);
-}
+  .plataformas {
+    flex-direction: column;
+  }
 
-.apresentacao__alura__plus__botao__assinar__alura__plus{
-    background-color: transparent;
-    border: 2px solid var(--branco-principal);
-    color: var(--branco-principal);
-    text-decoration: none;
-    padding: 3%;
-    text-align: center;
-    border-radius: 8px;
+  .telas {
+    flex-direction: column-reverse;
+  }
+
+  .notebook {
+    flex-direction: column;
+  }
+
+  .dispositivos {
+    flex-direction: column;
+  }
+
+  .dispositivos__opcoes {
+    flex-direction: column;
+  }
+
+  .telas__botao {
     width: 100%;
+    padding: 1%;
+  }
 }
 
-.apresentacao__alura__plus__botao__assinar__alura__plus:hover{
-    background-color: var(--cor-hover-secundario);
-}
+@media (max-width: 1024px) {
+  .apresentacao__alura__plus {
+    text-align: center;
+    padding: 10% 10% 0 10%;
+  }
 
-.apresentacao__alura__plus__observacao{
-    color: var(--cinza-secundario);
+  .apresentacao__alura__plus__titulo {
+    font-size: 2rem;
+  }
+
+  .apresentacao__alura__plus__imagem__combo {
+    width: 90%;
+  }
+
+  .plataformas {
+    padding: 40% 10% 0% 10%;
+    text-align: center;
+  }
+
+  .plataformas__imagem {
+    width: 100%;
+  }
+
+  .plataformas__titulo {
+    font-size: 2rem;
+  }
+
+  .plataformas__paragrafo {
+    font-size: 1rem;
+  }
+
+  .telas {
+    padding: 40% 10% 0% 10%;
+    text-align: center;
+  }
+
+  .telas__imagem {
+    width: 100%;
+  }
+
+  .telas__paragrafo {
+    font-size: 1rem;
+  }
+
+  .telas__texto__botao {
+    font-size: 1rem;
+  }
+
+  .notebook {
+    padding: 40% 10% 0% 10%;
+    text-align: center;
+  }
+
+  .notebook__imagem {
+    width: 100%;
+  }
+
+  .notebook__titulo {
+    font-size: 2rem;
+  }
+
+  .notebook__paragrafo {
+    font-size: 1rem;
+  }
+
+  .dispositivos {
+    padding: 50% 10% 0% 10%;
+    text-align: center;
+  }
+
+  .dispositivos__titulo {
+    font-size: 2rem;
+  }
+
+  .dispositivos__imagem__tv {
+    width: 100%;
+  }
+
+  .dispositivos__titulo__tv {
+    font-size: 1.5rem;
+  }
+
+  .dispositivos__imagem__computador {
+    width: 100%;
+  }
+
+  .dispositivos__titulo__computador {
+    font-size: 1.5rem;
+  }
+
+  .dispositivos__imagem__celular__tablet {
+    width: 100%;
+  }
+
+  .dispositivos__titulo__celular__tablet {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    padding: 50% 10% 10% 10%;
+  }
+
+  .footer__imagem {
+    width: 15%;
+  }
+
+  .footer__texto {
     font-size: 0.75rem;
-}
+  }
 
-.plataformas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    padding: 8% 12%;
-}
-
-.plataformas__imagem{
-
-}
-
-.plataformas__textos{
-    display: flex;
-    flex-direction: column;
-}
-
-.plataformas__titulo{
-    font-size: 3rem;
-}
-
-.plataformas__paragrafo{
-    font-size: 1rem;
-    color: var(--cinza-secundario)
-}
-
-.telas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    padding: 8% 12%;
-}
-
-.telas__texto__botao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.telas__paragrafo{
-    color: var(--cinza-secundario);
-    font-size: 1rem;
-}
-
-.telas__botao{
-    background-color: var(--azul-terciario);
-    color: var(--branco-principal);
-    text-decoration: none;
-    padding: 3%;
+  .footer__texto__alternativo {
     text-align: center;
-    border-radius: 8px;
+    font-size: 0.75rem;
+  }
 }
 
-.telas__imagem{
+@media (max-width: 767px) {
+  .apresentacao__alura__plus {
+    text-align: center;
+    padding: 10% 10% 0 10%;
+  }
 
-}
+  .apresentacao__alura__plus__titulo {
+    font-size: 1.5rem;
+  }
 
-.notebook{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    padding: 8% 12%;
-}
+  .apresentacao__alura__plus__imagem__combo {
+    width: 90%;
+  }
 
-.notebook__imagem{
+  .plataformas {
+    padding: 50% 10% 0% 10%;
+    text-align: center;
+  }
 
-}
+  .plataformas__imagem {
+    width: 100%;
+  }
 
-.notebook__textos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* gap: 16px; */
-}
+  .plataformas__titulo {
+    font-size: 1.5rem;
+  }
 
-.notebook__titulo{
-    font-size: 3rem;
-}
+  .plataformas__paragrafo {
+    font-size: 0.75rem;
+  }
 
-.notebook__paragrafo{
-    color: var(--cinza-secundario);
+  .telas {
+    padding: 40% 10% 0% 10%;
+    text-align: center;
+  }
+
+  .telas__imagem {
+    width: 100%;
+  }
+
+  .telas__paragrafo {
+    font-size: 0.75rem;
+  }
+
+  .telas__texto__botao {
+    font-size: 0.75rem;
+  }
+
+  .notebook {
+    padding: 40% 10% 0% 10%;
+    text-align: center;
+  }
+
+  .notebook__imagem {
+    width: 100%;
+  }
+
+  .notebook__titulo {
+    font-size: 1.5rem;
+  }
+
+  .notebook__paragrafo {
+    font-size: 0.75rem;
+  }
+
+  .dispositivos {
+    padding: 40% 10% 0% 10%;
+    text-align: center;
+  }
+
+  .dispositivos__titulo {
+    font-size: 1.5rem;
+  }
+
+  .dispositivos__imagem__tv {
+    width: 90%;
+  }
+
+  .dispositivos__titulo__tv {
     font-size: 1rem;
-}
+  }
 
-.dispositivos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 8% 12%;
-}
+  .dispositivos__imagem__computador {
+    width: 90%;
+  }
 
-.dispositivos__titulo{
-    font-size: 3rem;
-    text-align: center;
-}
-
-.dispositivos__opcoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
-
-.dispositivos__tv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.dispositivos__imagem__tv{
-
-}
-
-.dispositivos__titulo__tv{
-
-}
-
-.dispositivos__computador{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.dispositivos__imagem__computador{
-
-}
-
-.dispositivos__titulo__computador{
-    
-}
-
-.dispositivos__celular__tablet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.dispositivos__imagem__celular__tablet{
-
-}
-
-.dispositivos__titulo__celular_tablet{
-
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 8% 12%;
-}
-
-.footer__infos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-.footer__textos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer__texto{
+  .dispositivos__titulo__computador {
     font-size: 1rem;
-    text-decoration: none;
-    color: var(--branco-principal);
+  }
+
+  .dispositivos__imagem__celular__tablet {
+    width: 90%;
+  }
+
+  .dispositivos__titulo__celular__tablet {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 40% 10% 10% 10%;
+  }
+
+  .footer__textos {
+    flex-direction: column;
+  }
+
+  .footer__imagem {
+    width: 40%;
+  }
+
+  .footer__texto {
+    font-size: 0.75rem;
+  }
+
+  .footer__texto__alternativo {
     text-align: center;
-}
-
-.footer__texto__alternativo{
-    font-size: 0.875rem;
-    color: var(--cinza-secundario);
-    text-align: center;
-}
-
-@media (max-width: 1200px){
-
-    .apresentacao__alura__plus{
-        background-image: none;
-    }
-    
-    .apresentacao__alura__plus__componentes{
-        width: 100%;
-    }
-    
-    .plataformas{
-        flex-direction: column;
-    }
-
-    .telas{
-        flex-direction: column-reverse;
-    }
-
-    .notebook{
-        flex-direction: column;
-    }
-
-    .dispositivos{
-        flex-direction: column;
-    }
-
-    .dispositivos__opcoes{
-        flex-direction: column;
-    }
-
-    .telas__botao{
-        width: 100%;
-        padding: 1%;
-    }
-
-}
-
-@media (max-width: 1024px){
-
-    .apresentacao__alura__plus{
-        text-align: center;
-        padding: 10% 10% 0 10%;
-    }
-
-    .apresentacao__alura__plus__titulo{
-        font-size: 2rem;
-    }
-
-    .apresentacao__alura__plus__imagem__combo{
-        width: 90%;
-    }
-
-    .plataformas{
-        padding: 40% 10% 0% 10%;
-        text-align: center;
-    }
-
-    .plataformas__imagem{
-        width: 100%;
-    }
-
-    .plataformas__titulo{
-        font-size: 2rem;
-    }
-
-    .plataformas__paragrafo{
-        font-size: 1rem;
-    }
-
-    .telas{
-        padding: 40% 10% 0% 10%;
-        text-align: center;
-    }
-
-    .telas__imagem{
-        width: 100%;
-    }
-
-    .telas__paragrafo{
-        font-size: 1rem;
-    }
-
-    .telas__texto__botao{
-        font-size: 1rem;
-    }
-
-    .notebook{
-        padding: 40% 10% 0% 10%;
-        text-align: center;
-    }
-    
-    .notebook__imagem{
-        width: 100%;
-    }
-
-    .notebook__titulo{
-        font-size: 2rem;
-    }
-
-    .notebook__paragrafo{
-        font-size: 1rem;
-    }
-
-    .dispositivos{
-        padding: 50% 10% 0% 10%;
-        text-align: center;
-    }
-
-    .dispositivos__titulo{
-        font-size: 2rem;
-    }
-
-    .dispositivos__imagem__tv{
-        width: 100%;
-    }
-
-    .dispositivos__titulo__tv{
-        font-size: 1.5rem;
-    }
-
-    .dispositivos__imagem__computador{
-        width: 100%;
-    }
-
-    .dispositivos__titulo__computador{
-        font-size: 1.5rem;
-    }
-
-    .dispositivos__imagem__celular__tablet{
-        width: 100%;
-    }
-
-    .dispositivos__titulo__celular__tablet{
-        font-size: 1.5rem;
-    }
-    
-    footer{
-        padding: 50% 10% 10% 10%;
-    }
-
-    .footer__imagem{
-        width: 15%;
-    }
-
-    .footer__texto{
-        font-size: 0.75rem;
-    }
-
-    .footer__texto__alternativo{
-        text-align: center;
-        font-size: 0.75rem;
-    }
-
-}
-
-@media (max-width: 767px){
-
-    .apresentacao__alura__plus{
-        text-align: center;
-        padding: 10% 10% 0 10%;
-    }
-
-    .apresentacao__alura__plus__titulo{
-        font-size: 1.5rem;
-    }
-
-    .apresentacao__alura__plus__imagem__combo{
-        width: 90%;
-    }
-
-    .plataformas{
-        padding: 50% 10% 0% 10%;
-        text-align: center;
-    }
-
-    .plataformas__imagem{
-        width: 100%;
-    }
-
-    .plataformas__titulo{
-        font-size: 1.5rem;
-    }
-
-    .plataformas__paragrafo{
-        font-size: 0.75rem;
-    }
-
-    .telas{
-        padding: 40% 10% 0% 10%;
-        text-align: center;
-    }
-
-    .telas__imagem{
-        width: 100%;
-    }
-
-    .telas__paragrafo{
-        font-size: 0.75rem;
-    }
-
-    .telas__texto__botao{
-        font-size: 0.75rem;
-    }
-
-    .notebook{
-        padding: 40% 10% 0% 10%;
-        text-align: center;
-    }
-    
-    .notebook__imagem{
-        width: 100%;
-    }
-
-    .notebook__titulo{
-        font-size: 1.5rem;
-    }
-
-    .notebook__paragrafo{
-        font-size: 0.75rem;
-    }
-
-    .dispositivos{
-        padding: 40% 10% 0% 10%;
-        text-align: center;
-    }
-
-    .dispositivos__titulo{
-        font-size: 1.5rem;
-    }
-
-    .dispositivos__imagem__tv{
-        width: 90%;
-    }
-
-    .dispositivos__titulo__tv{
-        font-size: 1rem;
-    }
-
-    .dispositivos__imagem__computador{
-        width: 90%;
-    }
-
-    .dispositivos__titulo__computador{
-        font-size: 1rem;
-    }
-
-    .dispositivos__imagem__celular__tablet{
-        width: 90%;
-    }
-
-    .dispositivos__titulo__celular__tablet{
-        font-size: 1rem;
-    }
-    
-    footer{
-        padding: 40% 10% 10% 10%;
-    }
-
-    .footer__textos{
-        flex-direction: column;
-    }
-
-    .footer__imagem{
-        width: 40%;
-    }
-
-    .footer__texto{
-        font-size: 0.75rem;
-    }
-
-    .footer__texto__alternativo{
-        text-align: center;
-        font-size: 0.75rem;
-    }
-
+    font-size: 0.75rem;
+  }
 }
