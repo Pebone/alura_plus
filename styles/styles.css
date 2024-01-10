@@ -126,23 +126,8 @@ body {
   }
 }
 
-.animation__right__fade__in {
-  animation: ease-out 1s right-fade-in;
-}
-
-@keyframes right-fade-in {
-  from {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
 .animation__fade__in {
-  animation: ease-out 1s fade-in;
+  animation: ease-out 1.5s fade-in;
 }
 
 @keyframes fade-in {

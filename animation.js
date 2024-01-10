@@ -18,11 +18,11 @@ const observer_telas = new IntersectionObserver((entries) => {
     const telas = e.target.querySelector(".telas");
 
     if (e.isIntersecting) {
-      telas.classList.add("animation__right__fade__in");
+      telas.classList.add("animation__fade__in");
       return;
     }
 
-    telas.classList.remove("animation__right__fade__in");
+    telas.classList.remove("animation__fade__in");
   });
 });
 
