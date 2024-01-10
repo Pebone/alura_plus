@@ -202,6 +202,7 @@ body{
 
 .dispositivos__titulo{
     font-size: 3rem;
+    text-align: center;
 }
 
 .dispositivos__opcoes{
@@ -284,10 +285,288 @@ footer{
     font-size: 1rem;
     text-decoration: none;
     color: var(--branco-principal);
+    text-align: center;
 }
 
 .footer__texto__alternativo{
     font-size: 0.875rem;
     color: var(--cinza-secundario);
     text-align: center;
+}
+
+@media (max-width: 1200px){
+
+    .apresentacao__alura__plus{
+        background-image: none;
+    }
+    
+    .apresentacao__alura__plus__componentes{
+        width: 100%;
+    }
+    
+    .plataformas{
+        flex-direction: column;
+    }
+
+    .telas{
+        flex-direction: column-reverse;
+    }
+
+    .notebook{
+        flex-direction: column;
+    }
+
+    .dispositivos{
+        flex-direction: column;
+    }
+
+    .dispositivos__opcoes{
+        flex-direction: column;
+    }
+
+    .telas__botao{
+        width: 100%;
+        padding: 1%;
+    }
+
+}
+
+@media (max-width: 1024px){
+
+    .apresentacao__alura__plus{
+        text-align: center;
+        padding: 10% 10% 0 10%;
+    }
+
+    .apresentacao__alura__plus__titulo{
+        font-size: 2rem;
+    }
+
+    .apresentacao__alura__plus__imagem__combo{
+        width: 90%;
+    }
+
+    .plataformas{
+        padding: 40% 10% 0% 10%;
+        text-align: center;
+    }
+
+    .plataformas__imagem{
+        width: 100%;
+    }
+
+    .plataformas__titulo{
+        font-size: 2rem;
+    }
+
+    .plataformas__paragrafo{
+        font-size: 1rem;
+    }
+
+    .telas{
+        padding: 40% 10% 0% 10%;
+        text-align: center;
+    }
+
+    .telas__imagem{
+        width: 100%;
+    }
+
+    .telas__paragrafo{
+        font-size: 1rem;
+    }
+
+    .telas__texto__botao{
+        font-size: 1rem;
+    }
+
+    .notebook{
+        padding: 40% 10% 0% 10%;
+        text-align: center;
+    }
+    
+    .notebook__imagem{
+        width: 100%;
+    }
+
+    .notebook__titulo{
+        font-size: 2rem;
+    }
+
+    .notebook__paragrafo{
+        font-size: 1rem;
+    }
+
+    .dispositivos{
+        padding: 50% 10% 0% 10%;
+        text-align: center;
+    }
+
+    .dispositivos__titulo{
+        font-size: 2rem;
+    }
+
+    .dispositivos__imagem__tv{
+        width: 100%;
+    }
+
+    .dispositivos__titulo__tv{
+        font-size: 1.5rem;
+    }
+
+    .dispositivos__imagem__computador{
+        width: 100%;
+    }
+
+    .dispositivos__titulo__computador{
+        font-size: 1.5rem;
+    }
+
+    .dispositivos__imagem__celular__tablet{
+        width: 100%;
+    }
+
+    .dispositivos__titulo__celular__tablet{
+        font-size: 1.5rem;
+    }
+    
+    footer{
+        padding: 50% 10% 10% 10%;
+    }
+
+    .footer__imagem{
+        width: 15%;
+    }
+
+    .footer__texto{
+        font-size: 0.75rem;
+    }
+
+    .footer__texto__alternativo{
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .apresentacao__alura__plus{
+        text-align: center;
+        padding: 10% 10% 0 10%;
+    }
+
+    .apresentacao__alura__plus__titulo{
+        font-size: 1.5rem;
+    }
+
+    .apresentacao__alura__plus__imagem__combo{
+        width: 90%;
+    }
+
+    .plataformas{
+        padding: 50% 10% 0% 10%;
+        text-align: center;
+    }
+
+    .plataformas__imagem{
+        width: 100%;
+    }
+
+    .plataformas__titulo{
+        font-size: 1.5rem;
+    }
+
+    .plataformas__paragrafo{
+        font-size: 0.75rem;
+    }
+
+    .telas{
+        padding: 40% 10% 0% 10%;
+        text-align: center;
+    }
+
+    .telas__imagem{
+        width: 100%;
+    }
+
+    .telas__paragrafo{
+        font-size: 0.75rem;
+    }
+
+    .telas__texto__botao{
+        font-size: 0.75rem;
+    }
+
+    .notebook{
+        padding: 40% 10% 0% 10%;
+        text-align: center;
+    }
+    
+    .notebook__imagem{
+        width: 100%;
+    }
+
+    .notebook__titulo{
+        font-size: 1.5rem;
+    }
+
+    .notebook__paragrafo{
+        font-size: 0.75rem;
+    }
+
+    .dispositivos{
+        padding: 40% 10% 0% 10%;
+        text-align: center;
+    }
+
+    .dispositivos__titulo{
+        font-size: 1.5rem;
+    }
+
+    .dispositivos__imagem__tv{
+        width: 90%;
+    }
+
+    .dispositivos__titulo__tv{
+        font-size: 1rem;
+    }
+
+    .dispositivos__imagem__computador{
+        width: 90%;
+    }
+
+    .dispositivos__titulo__computador{
+        font-size: 1rem;
+    }
+
+    .dispositivos__imagem__celular__tablet{
+        width: 90%;
+    }
+
+    .dispositivos__titulo__celular__tablet{
+        font-size: 1rem;
+    }
+    
+    footer{
+        padding: 40% 10% 10% 10%;
+    }
+
+    .footer__textos{
+        flex-direction: column;
+    }
+
+    .footer__imagem{
+        width: 40%;
+    }
+
+    .footer__texto{
+        font-size: 0.75rem;
+    }
+
+    .footer__texto__alternativo{
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
 }
