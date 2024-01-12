@@ -109,6 +109,8 @@ body {
   align-items: center;
   gap: 70px;
   padding: 8% 12%;
+  animation: left-fade-in linear;
+  animation-timeline: view(700px 100px);
 }
 
 .animation__left__fade__in {
@@ -118,6 +120,17 @@ body {
 @keyframes left-fade-in {
   from {
     transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes right-fade-in {
+  from {
+    transform: translateX(1000px);
     opacity: 0;
   }
   to {
@@ -162,6 +175,8 @@ body {
   align-items: center;
   gap: 70px;
   padding: 8% 12%;
+  animation: right-fade-in linear;
+  animation-timeline: view(700px 100px);
 }
 
 .telas__texto__botao {
@@ -195,6 +210,8 @@ body {
   align-items: center;
   gap: 70px;
   padding: 8% 12%;
+  animation: left-fade-in linear;
+  animation-timeline: view(700px 100px);
 }
 
 .notebook__imagem {
@@ -223,6 +240,8 @@ body {
   align-items: center;
   gap: 50px;
   padding: 8% 12%;
+  animation: fade-in linear;
+  animation-timeline: view(700px 100px);
 }
 
 .dispositivos__titulo {
